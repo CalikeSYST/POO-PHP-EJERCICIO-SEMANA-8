@@ -1,0 +1,28 @@
+<?php
+
+class Producto
+{
+
+    // atributos de una clase en POO
+    public $nombre;
+    public $precio;
+
+    // constructor
+    public function _construct($nombre, $precio)
+    {
+        $this->nombre = $nombre;
+        $this->precio = $precio;
+    }
+
+    // metodo
+    public function mostrarInformacion()
+    {
+        return "producto: ".$this ->nombre." -  Precio : S/ ".$this ->precio;
+    }
+}
+
+    //objetos que nacen de la misma clase o plantilla
+    $producto1 =new Producto("manzana",10.5);
+    //$producto1->nombre .=. "manzana"T
+    //$producto1->precio .= 10.5;
+    echo $producto1->mostrarInformacion();
